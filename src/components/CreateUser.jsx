@@ -13,7 +13,7 @@ export const CreateUser = ({ history }) => {
     e.preventDefault();
     console.log(formValues);
 
-    axios.post('http://localhost:4000/users/add',formValues)
+    axios.post('https://mern1.vercel.app/users/add',formValues)
     .then(res=>console.log(res.data))
     .catch(err=>console.log(err))
 

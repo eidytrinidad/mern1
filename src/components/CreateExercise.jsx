@@ -16,7 +16,7 @@ export const CreateExercise = ({ history }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/users")
+      .get("https://mern1.vercel.app/users")
       .then((res) => {if (res.data.length) setUsers(res.data) })
       .catch((err) => console.log(err));
     

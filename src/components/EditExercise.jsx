@@ -26,7 +26,7 @@ export const EditExercise = ({ history }) => {
   let { username, description, duration, date } = values;
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/exercises/${id}`)
+    axios.get(`https://mern1.vercel.app/exercises/${id}`)
         .then(res=>{
           console.log(res.data)
           let { username, description, duration, date } =res.data

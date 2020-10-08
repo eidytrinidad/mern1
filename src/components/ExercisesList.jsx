@@ -10,7 +10,7 @@ export const ExercisesList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/exercises")
+      .get("https://mern1.vercel.app/exercises")
       .then((res) => {
         setExercises(res.data);
       })
@@ -19,7 +19,7 @@ export const ExercisesList = () => {
 
   const deleteExercise = (id) => {
     axios
-      .delete(`http://localhost:4000/exercises/${id}`)
+      .delete(`https://mern1.vercel.app/exercises/${id}`)
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
 
